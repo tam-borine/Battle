@@ -1,4 +1,4 @@
-<%= "Welcome to the game where #{@user_name_one} plays #{@user_name_two}" %>
-<%= @user_name_two %>'s Hit points: <%= $p2.hp %>
+<%= "Welcome to the game where #{@game.p1.name} plays #{@game.p2.name}" %>
+<%= @game.p2.name %>'s Hit points: <%= @game.p2.hp %>
 
 <a href="/attack">Attack</a>
