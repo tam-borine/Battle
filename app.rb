@@ -22,7 +22,8 @@ class Battle < Sinatra::Base
 
   get '/attack' do
     @game = $game
-    @game.attack(@game.p2)
+    #who attacks who needs to be based on turn
+    @game.attack(@game.p1, @game.p2)
     erb(:attack)
   end
 
