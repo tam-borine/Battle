@@ -15,6 +15,10 @@ class Battle < Sinatra::Base
     erb(:play)
   end
 
+  get '/attack' do
+    erb(:attack)
+  end
+
   post '/names' do
     session['user_name_one'] = params[:user_name_one]
     session['user_name_two'] = params[:user_name_two]
