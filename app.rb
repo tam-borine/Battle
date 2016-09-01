@@ -20,9 +20,10 @@ class Battle < Sinatra::Base
   end
 
   get '/attack' do
+    $p1.attack($p2)
     erb(:attack)
   end
-  
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end
