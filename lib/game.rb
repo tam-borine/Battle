@@ -23,4 +23,20 @@ attr_reader :p1, :p2, :turn
     end.first
   end
 
+  def loser
+    @players.select do
+      |player| player.hp == 0
+    end.first
+  end
+
+  def winner
+    @players.select do
+      |player| player.hp != 0
+    end.first
+  end
+
+  def game_over?
+    @p1.hp == 0 || @p2.hp == 0
+  end
+
 end

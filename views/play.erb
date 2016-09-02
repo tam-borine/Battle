@@ -4,4 +4,8 @@
 
 <%= @game.p2.name %>'s Hit points: <%= @game.p2.hp %>
 
-<a href="/attack">Attack</a>
+<form action="/attack" method="post">
+<div class="button">
+    <button type="submit">Attack</button>
+</div>
+</form>
