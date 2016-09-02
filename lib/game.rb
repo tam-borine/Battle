@@ -9,6 +9,14 @@ attr_reader :p1, :p2, :turn
     @turn = @p1
   end
 
+  def self.create(p1,p2)
+    @game = Game.new(p1,p2)
+  end
+
+  def self.instance
+    @game
+  end
+
   def attack
     enemy_of(@turn).take_a_hit
   end
