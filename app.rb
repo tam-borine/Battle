@@ -38,6 +38,7 @@ class Battle < Sinatra::Base
 
   get '/game_over' do
     @game = $game
+    @winner = @game.winner.name
     erb (:game_over)
   end
 
