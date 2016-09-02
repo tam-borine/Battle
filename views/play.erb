@@ -1,2 +1,11 @@
-<%= "Welcome to the game where #{@user_name_one} plays #{@user_name_two}" %>
-<%= @user_name_two %>'s Hit points: 100
+<%= "Welcome to the game. It is #{@game.turn.name}'s turn" %>
+
+<%= @game.p1.name %>'s Hit points: <%= @game.p1.hp %>
+
+<%= @game.p2.name %>'s Hit points: <%= @game.p2.hp %>
+
+<form action="/attack" method="post">
+<div class="button">
+    <button type="submit">Attack</button>
+</div>
+</form>
