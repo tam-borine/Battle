@@ -17,13 +17,13 @@ class Battle < Sinatra::Base
 
   get '/play' do
     @game = $game
+    @game.switch_turns
     erb(:play)
   end
 
   get '/attack' do
     @game = $game
-    #who attacks who needs to be based on turn
-    @game.attack(@game.p1, @game.p2)
+    @game.attack
     erb(:attack)
   end
 

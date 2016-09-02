@@ -1,3 +1,3 @@
-<%= @game.p1.name %> Attack successful <%= @game.p2.name %>
-<%= @game.p2.name %>'s Hit points: <%= @game.p2.hp %>
+<%= @game.turn.name %> Attacks successfully on <%= @game.enemy_of(@game.turn).name %>
+  <%= @game.enemy_of(@game.turn).name %>'s Hit points: <%= @game.enemy_of(@game.turn).hp %>
 <a href="/play">Next Round</a>
