@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 feature 'hp deduct' do
-  scenario 'player 1 attacks player 2 and deduct HP by 10' do
+  scenario 'player 1 attacking player 2 reduces HP' do
     sign_in_and_play
     click_button 'Attack'
-    expect(page).to have_content("Hit points: 90")
+    expect(page).not_to have_content("Hit points: 100")
 
   end
 end

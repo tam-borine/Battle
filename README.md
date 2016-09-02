@@ -1,7 +1,21 @@
+Welcome to our Wonderful Battle!
+---
+
+These are the features implemented
+
+- [x] We can Start a 2 player fight by entering our Names and seeing them
+- [x] We see both players' hit points each round
+- [x] Players can attack each other and get confirmation of enemy's HP reduction
+- [x] We switch turns to attack each round
+- [x] Game over when one player dies (0 HP)
+- [ ] Computerised opponent can be played if you have no friends
+- [ ] You can choose many types of attacks (eg. paralyse, poison, put to sleep)
+- [ ] You can spend a turn to heal some HP
+
+
 As two Players,
 So we can play a personalised game of Battle,
 We want to Start a fight by entering our Names and seeing them
-DONE
 
 As Player 1,
 So I can see how close I am to winning

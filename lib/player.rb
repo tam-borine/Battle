@@ -10,7 +10,7 @@ attr_writer :turn
   end
 
   def take_a_hit
-    @hp -= 10
+    @hp -= rand(1..50)
   end
 
 
